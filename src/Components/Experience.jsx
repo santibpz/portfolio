@@ -66,18 +66,18 @@ const Experience = () => {
         title: "PYTHON",
         style: "shadow-yellow-400"
       },
-    
 ]
+// t-[115px]
   return (
-    <div name = "experience" className="w-full h-screen mt-[115px]">
-        <div className = "max-w-screen-lg mx-auto flex flex-col p-4 justify-center w-full h-full text-white">
+    <div  name = "experience" className="w-full h-screen ">
+        <div className = "max-w-screen-lg mx-auto flex flex-col py-[100px]  justify-center w-full h-full text-white">
             
-            <div>
-                <p className = "text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Experience</p>
-                <p className = "py-6">These are the frameworks,  languages I have worked with in college: </p>
+            <div className  = "mt-16">
+                <p className = "text-4xl font-bold border-b-4 border-gray-500 inline">Experience</p>
+                <p className = "pt-4">These are the frameworks,  languages I have worked with in college: </p>
             </div>
 
-            <div className = "w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+            <div className = "w-full grid grid-cols-2 sm:grid-cols-3 gap-5 px-5 text-center mb-10 sm:px-2">
                 {/* grid layout of cards */}
 
                 {technologies.map(({id, src,title, style}) => {

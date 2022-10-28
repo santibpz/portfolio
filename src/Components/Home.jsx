@@ -7,7 +7,7 @@ const Home = () => {
   return (
     // container div
      <div name = "home" 
-     className=" w-full"
+     className=" w-full h-screen"
      >
        <div className="md:mt-20 mx-auto flex flex-col-reverse items-center justify-around px-4 text-white md:flex-row">
 

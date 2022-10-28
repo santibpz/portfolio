@@ -6,6 +6,10 @@ import tipCalculator from '../assets/portfolio/tipCalculator.jpg'
 
 
 const Portfolio = () => {
+
+  const openTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
   const projects = [
     {
         id:0,
@@ -41,18 +45,18 @@ const Portfolio = () => {
             </div>
             
             {/* structure for the portolio card */}
-            <div className = "grid sm:grid-cols-2 md:grid-cols-3 gap-4 px-12 sm:px-0">
+            <div className = "grid sm:grid-cols-2 md:grid-cols-4 gap-4 px-12 sm:px-0">
 
                 {/* element of the portfolio card */}
                 {
-                    projects.map(({src,id}) => {
+                    projects.map(({src,id, demo, code}) => {
 
                     return (
                          <div key = {id} className = "shadow-md shadow-gray-600 rounded-lg">
                            <img className = "rounded-md hover:scale-105 duration-200" src={src} height = {300}  alt="portfolio project" />
                            <div className = "flex items-center justify-center">
-                             <button className = "w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:font-bold" >demo</button>
-                             <button className = "w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:font-bold" >code</button>
+                             <button onClick={() => {openTab(demo)}} className = "w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:font-bold" >demo</button>
+                             <button onClick={() => {openTab(code)}}className = "w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:font-bold" >code</button>
                            </div>
                          </div>
                     )
