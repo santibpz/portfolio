@@ -2,6 +2,7 @@ import React from 'react'
 import myImage from "../assets/imagen.jpg"
 import {RiArrowRightSLine} from "react-icons/ri"
 import SocialLinks from './SocialLinks'
+import {Link} from 'react-scroll'
 // componente de Home 
 const Home = () => {
   return (
@@ -24,12 +25,14 @@ const Home = () => {
             Here is some of my work!
           </p>
           <div>
+            <Link to = "portfolio" smooth duration = {500}>
             <button className= "mx-auto group w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-700">
               Portfolio 
               <span className = "ml-2 group-hover:rotate-90 duration-500">
                 <RiArrowRightSLine size = {30}/>
               </span>
             </button>
+            </Link>
           </div>
          </div>
          
