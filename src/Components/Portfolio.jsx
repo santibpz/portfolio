@@ -3,6 +3,7 @@ import fightGame from '../assets/portfolio/fightGame.jpg'
 import weatherApp from '../assets/portfolio/weatherApp.jpg'
 import rockPaperScissors from '../assets/portfolio/rockPaperScissors.jpg'
 import tipCalculator from '../assets/portfolio/tipCalculator.jpg'
+import noteApp from '../assets/portfolio/noteApp.jpg'
 
 
 const Portfolio = () => {
@@ -34,6 +35,12 @@ const Portfolio = () => {
         src: tipCalculator,
         demo:"https://tip-calculator.santiagobenite4.repl.co",
         code:"https://replit.com/@SantiagoBenite4/tip-calculator#script.js"
+    }, 
+    {
+       id:4,
+       src: noteApp,
+       demo: "https://noteappfs.fly.dev/", 
+       code: "https://github.com/SantiagoBenitezPerez/FULLSTACK-noteapp"
     }
   ]
   return (
@@ -49,7 +56,7 @@ const Portfolio = () => {
 
                 {/* element of the portfolio card */}
                 {
-                    projects.map(({src,id, demo, code}) => {
+                    projects.map(({src, id, demo, code}) => {
 
                     return (
                          <div key = {id} className = "shadow-md shadow-gray-600 rounded-lg">
