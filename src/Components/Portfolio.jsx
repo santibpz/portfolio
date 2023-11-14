@@ -4,6 +4,7 @@ import weatherApp from '../assets/portfolio/weatherApp.jpg'
 import rockPaperScissors from '../assets/portfolio/rockPaperScissors.jpg'
 import tipCalculator from '../assets/portfolio/tipCalculator.jpg'
 import noteApp from '../assets/portfolio/noteApp.jpg'
+import porMexico from '../assets/portfolio/porMexico.jpg'
 
 
 const Portfolio = () => {
@@ -14,33 +15,39 @@ const Portfolio = () => {
   const projects = [
     {
         id:0,
+        src: porMexico,
+        demo: "https://139-144-31-25.ip.linodeusercontent.com/#/login",
+        code: "https://github.com/santibpz/Sistema-de-Reporteo-Fundacion-Por-Mexico/"
+    },
+    {
+        id:1,
         src: fightGame,
         demo: "https://fight-game.santiagobenite4.repl.co/",
         code: "https://replit.com/@SantiagoBenite4/Fight-game#script.js"
     },
     {
-        id:1,
+        id:2,
         src: weatherApp,
         demo: "https://Weather-App.santiagobenite4.repl.co",
         code: "https://replit.com/@SantiagoBenite4/Weather-App#script.js"
     },
     {
-        id:2,
+        id:3,
         src: rockPaperScissors,
         demo: "https://Rock-paper-scissors-game.santiagobenite4.repl.co",
         code: "https://replit.com/@SantiagoBenite4/Rock-paper-scissors-game#script.js"
     },
     {
-        id:3,
+        id:4,
         src: tipCalculator,
         demo:"https://tip-calculator.santiagobenite4.repl.co",
         code:"https://replit.com/@SantiagoBenite4/tip-calculator#script.js"
     }, 
     {
-       id:4,
+       id:5,
        src: noteApp,
        demo: "https://noteappfs.fly.dev/", 
-       code: "https://github.com/SantiagoBenitezPerez/FULLSTACK-noteapp"
+       code: "https://github.com/santibpz/FULLSTACK-noteapp"
     }
   ]
   return (
